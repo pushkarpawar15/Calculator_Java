@@ -1,22 +1,36 @@
 package calculator;
-
 import java.util.Scanner;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-/**
- * Hello world!
- *
- */
+
 public class App 
 {
-    private static final Logger logger = LogManager.getLogger(App.class);
-    
+    // private static final Logger logger = LogManager.getLogger(App.class);
+    public static int add(int num1, int num2) {
+        return num1 + num2;
+    }
+
+    public static int subtract(int num1, int num2) {
+        return num1 - num2;
+    }
+
+    public static int multiply(int num1, int num2) {
+        return num1 * num2;
+    }
+
+    public static double divide(double num1, double num2) {
+        if (num2 != 0) {
+            return num1 / num2;
+        } else {
+            throw new ArithmeticException("Division by zero is not allowed");
+        }
+    }
     public static void main( String[] args )
     {
-        logger.info("Hello World");
-        System.out.println("Log4j version: " + org.apache.logging.log4j.util.PropertiesUtil.class.getPackage().getImplementationVersion());
-        Calculator calculator = new Calculator();
+        System.out.println("hello world");
+        // logger.info("Hello World");
+        // System.out.println("Log4j version: " + org.apache.logging.log4j.util.PropertiesUtil.class.getPackage().getImplementationVersion());
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Welcome to the Console Calculator!");
@@ -35,16 +49,15 @@ public class App
 
         switch (choice) {
             case 1:
-                System.out.println("Result: " + calculator.add(num1, num2));
+                System.out.println("Result: " + add(num1, num2));
                 break;
             case 2:
-                System.out.println("Result: " + calculator.subtract(num1, num2));
+                System.out.println("Result: " + subtract(num1, num2));
                 break;
             case 3:
-                System.out.println("Result: " + calculator.multiply(num1, num2));
-                break;
+                System.out.println("Result: " + multiply(num1, num2));
             case 4:
-                System.out.println("Result: " + calculator.divide(num1, num2));
+                System.out.println("Result: " + divide(num1, num2));
                 break;
             default:
                 System.out.println("Invalid choice. Please choose a valid operation.");
