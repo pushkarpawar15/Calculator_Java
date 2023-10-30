@@ -6,20 +6,25 @@ import org.apache.logging.log4j.Logger;
 
 public class App 
 {
-    // private static final Logger logger = LogManager.getLogger(App.class);
+    private static final Logger logger = LogManager.getLogger(App.class);
     public static int add(int num1, int num2) {
+        logger.info("Addition function executed");
         return num1 + num2;
     }
 
     public static int subtract(int num1, int num2) {
+        logger.info("Subtraction function executed");
         return num1 - num2;
     }
 
     public static int multiply(int num1, int num2) {
+        logger.info("Multiplication function executed");
         return num1 * num2;
     }
 
     public static double divide(double num1, double num2) {
+        logger.info("Division function executed");
+
         if (num2 != 0) {
             return num1 / num2;
         } else {
@@ -28,8 +33,6 @@ public class App
     }
     public static void main( String[] args )
     {
-        System.out.println("hello world");
-        // logger.info("Hello World");
         // System.out.println("Log4j version: " + org.apache.logging.log4j.util.PropertiesUtil.class.getPackage().getImplementationVersion());
         Scanner scanner = new Scanner(System.in);
 
