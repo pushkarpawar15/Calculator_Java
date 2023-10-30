@@ -56,6 +56,7 @@ public class App
                 break;
             case 3:
                 System.out.println("Result: " + multiply(num1, num2));
+                break;
             case 4:
                 System.out.println("Result: " + divide(num1, num2));
                 break;
