@@ -1,4 +1,4 @@
-# Calculator App1
+# Calculator App
 
 This is a simple calculator application written in Java.
 
