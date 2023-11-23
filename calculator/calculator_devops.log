@@ -3,3 +3,8 @@
 2023-10-31 01:59:46.342 [main] INFO  calculator.App - Subtraction function executed
 2023-10-31 01:59:46.342 [main] INFO  calculator.App - Division function executed
 2023-10-31 01:59:46.343 [main] INFO  calculator.App - Multiplication function executed
+2023-11-23 16:03:48.526 [main] INFO  calculator.App - Division function executed
+2023-11-23 16:03:48.528 [main] INFO  calculator.App - Addition function executed
+2023-11-23 16:03:48.528 [main] INFO  calculator.App - Subtraction function executed
+2023-11-23 16:03:48.529 [main] INFO  calculator.App - Division function executed
+2023-11-23 16:03:48.529 [main] INFO  calculator.App - Multiplication function executed
